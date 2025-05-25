@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   Mail,
@@ -9,10 +9,10 @@ import {
   Linkedin,
   Facebook,
   Dribbble,
-} from 'lucide-react';
-import { useRef } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+} from "lucide-react";
+import { useRef } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function ContactUs() {
   const formRef = useRef(null);
@@ -23,24 +23,24 @@ export default function ContactUs() {
 
     const formData = new FormData(form);
 
-    fetch('https://formsubmit.co/ajax/info@liquidchairgroup.com', {
-      method: 'POST',
+    fetch("https://formsubmit.co/ajax/info@liquidchairgroup.com", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
+        "Content-Type": "application/json",
+        Accept: "application/json",
       },
       body: JSON.stringify(Object.fromEntries(formData)),
     })
       .then((res) => res.json())
       .then((data) => {
-        if (data.success === 'true') {
+        if (data.success === "true") {
           form.reset();
-          toast.success('Message sent successfully!');
+          toast.success("Message sent successfully!");
         } else {
-          toast.error('Something went wrong!');
+          toast.error("Something went wrong!");
         }
       })
-      .catch(() => toast.error('Submission failed.'));
+      .catch(() => toast.error("Submission failed."));
   };
 
   return (
@@ -49,17 +49,17 @@ export default function ContactUs() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-10">
         {/* Contact Form */}
         <div className="bg-blue-50 rounded-2xl p-8 shadow-sm">
-          <h2 className="text-3xl md:text-[48px] font-semibold text-gray-900 mb-8">
+          <h2 className="text-xl md:text-[48px] font-semibold text-gray-900 mb-8">
             Get In Touch With Us
           </h2>
-          <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className="space-y-5"
-          >
+          <form ref={formRef} onSubmit={handleSubmit} className="space-y-5">
             {/* Hidden fields */}
             <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_subject" value="New Contact Form Submission" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Contact Form Submission"
+            />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input
@@ -102,7 +102,11 @@ export default function ContactUs() {
                 strokeWidth="2"
                 viewBox="0 0 24 24"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M5 12h14m-7-7l7 7-7 7"
+                />
               </svg>
             </button>
           </form>
@@ -110,9 +114,11 @@ export default function ContactUs() {
 
         {/* Contact Info */}
         <div>
-          <h2 className="text-3xl font-semibold text-gray-900 mb-4">Contact Us</h2>
+          <h2 className="text-3xl font-semibold text-gray-900 mb-4">
+            Contact Us
+          </h2>
           <p className="text-gray-600 mb-8">
-              Ready to transform your business? Contact us today. 
+            Ready to transform your business? Contact us today.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
             <div className="flex items-start gap-3 p-4 border rounded-lg">
@@ -133,7 +139,9 @@ export default function ContactUs() {
               <Mail className="text-blue-600 w-6 h-6" />
               <div>
                 <p className="font-semibold text-[#070707]">Email</p>
-                <p className="text-gray-600 text-sm">info@liquidchairgroup.com</p>
+                <p className="text-gray-600 text-sm">
+                  info@liquidchairgroup.com
+                </p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 border rounded-lg">
@@ -147,12 +155,22 @@ export default function ContactUs() {
 
           {/* Social Media */}
           <div className="flex justify-between items-center">
-            <h3 className="font-semibold text-lg mb-2 text-[#070707]">Social Media</h3>
+            <h3 className="font-semibold text-lg mb-2 text-[#070707]">
+              Social Media
+            </h3>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-700 hover:text-blue-600"><Instagram /></a>
-              <a href="#" className="text-gray-700 hover:text-blue-600"><Linkedin /></a>
-              <a href="#" className="text-gray-700 hover:text-blue-600"><Facebook /></a>
-              <a href="#" className="text-gray-700 hover:text-blue-600"><Dribbble /></a>
+              <a href="#" className="text-gray-700 hover:text-blue-600">
+                <Instagram />
+              </a>
+              <a href="#" className="text-gray-700 hover:text-blue-600">
+                <Linkedin />
+              </a>
+              <a href="#" className="text-gray-700 hover:text-blue-600">
+                <Facebook />
+              </a>
+              <a href="#" className="text-gray-700 hover:text-blue-600">
+                <Dribbble />
+              </a>
             </div>
           </div>
         </div>
