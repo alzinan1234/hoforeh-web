@@ -112,7 +112,7 @@ export default function ContactUs() {
         <div>
           <h2 className="text-3xl font-semibold text-gray-900 mb-4">Contact Us</h2>
           <p className="text-gray-600 mb-8">
-            In case your item goes missing, if anyone finds it and scans it, we will contact you...
+              Ready to transform your business? Contact us today. 
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
             <div className="flex items-start gap-3 p-4 border rounded-lg">
