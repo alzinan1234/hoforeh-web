@@ -43,8 +43,7 @@ export default function AboutPage() {
             <div className="bg-[#0978D9] text-white  rounded-xl p-6 md:pt-[64px] md:pb-[32px] pl-[32px] md:w-[531px] md:h-[199px] ">
               <h3 className="text-2xl font-semibold mb-2">Our Vision</h3>
               <p className="text-sm">
-                Empowering enterprises with cutting-edge AI, data engineering, and innovative
-                solutions.
+              To be the leading technology solutions provider, known for innovation, reliability, and excellence in service delivery.
               </p>
             </div>
 
@@ -52,8 +51,7 @@ export default function AboutPage() {
             <div className="bg-[#E6F2FB] text-gray-900 p-6 rounded-xl md:pt-[64px] md:pb-[32px] pl-[32px] md:w-[531px] md:h-[199px] ">
               <h3 className="text-2xl font-semibold mb-2">Our Mission</h3>
               <p className="text-sm">
-                Empowering enterprises with cutting-edge AI, data engineering, and innovative
-                solutions.
+            To empower businesses through cutting-edge technology solutions and drive digital transformation across industries.
               </p>
             </div>
           </div>

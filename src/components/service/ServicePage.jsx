@@ -4,13 +4,13 @@ import Image from 'next/image';
 const services = [
   {
     title: "AI Consulting",
-    description: "Enterprise-grade language models customized for your specific use cases.",
+    description: "Strategic AI implementation and machine learning solutions.",
     image: "/service-Image1 - Copy.png", // Replace with your actual image path or use next/image
     link: "#",
   },
   {
     title: "Data Engineering",
-    description: "Enterprise-grade language models customized for your specific use cases.",
+    description: "Scalable data infrastructure and pipeline development.",
     image: "/service-Image2 - Copy.png",
     link: "#",
   },

@@ -5,19 +5,19 @@ const services = [
 
     {
     title: "Lodge Advisor",
-    description: "Enterprise-grade language models customized for your specific use cases.",
+    description: "AI Powered booking platform for all your hospitality needs",
     image: "/service-Image2 - Copy.png",
     link: "#",
   },
   {
     title: "Lodge Advisor",
-    description: "Enterprise-grade language models customized for your specific use cases.",
+    description: "AI Powered booking platform for all your hospitality needs",
     image: "/service-Image1 - Copy.png", // Replace with your actual image path or use next/image
     link: "#",
   },
   {
     title: "Lodge Advisor",
-    description: "Enterprise-grade language models customized for your specific use cases.",
+    description: "AI Powered booking platform for all your hospitality needs",
     image: "/service-Image2 - Copy.png",
     link: "#",
   },
